@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+  height: fit-content;
+  width: 100%;
+}
+
+h1,
+p,
+a,
+h2,
+li {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* #212121 (Abu-Abu Gelap)
+#757575 (Abu-Abu Sedang)
+#BDBDBD (Abu-Abu Muda)
+#E0E0E0 (Abu-Abu Sangat Muda) */
+/* D9D9D9 */
+
+.container > section {
+  margin-top: 100px;
+  margin-bottom: 300px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #212121;
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #212121;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* jumbotron */
+
+.jumbotron {
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.line1 {
+  position: absolute;
+  width: 6px;
+  height: 80px;
+  background-color: #212121;
+  bottom: 5%;
+  left: 23%;
+}
+
+.line2 {
+  position: absolute;
+  width: 6px;
+  height: 80px;
+  background-color: #212121;
+  bottom: 10%;
+  left: 25%;
+}
+
+.line3 {
+  position: absolute;
+  width: 6px;
+  height: 80px;
+  background-color: #212121;
+  bottom: 0%;
+  left: 27%;
+}
+
+.jumbotron img {
+  width: 50%;
+  position: absolute;
+  z-index: -1;
+  bottom: -30%;
+  right: 0;
+}
+
+.jumbotron-title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jumbotron-title * {
+  margin-bottom: 15px;
+}
+
+.jumbotron-title h1 {
+  font-size: 64px;
+}
+
+.jumbotron-title p {
+  font-size: 20px;
+}
+
+.jumbotron a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #212121;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+  transition: all 0.3s;
+}
+
+.jumbotron a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #212121;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+  box-shadow: 0 4px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.jumbotron-image {
+  width: 40%;
+}
+
+.jumbotron-image .rectangle {
+  margin: auto;
+  display: block;
+  width: 280px;
+  height: 500px;
+  background-color: #d9d9d9;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0 4px 30px 5px rgba(0, 0, 0, 0.25);
+  transform-style: preserve-3d;
+}
+
+.jumbotron-image img {
+  width: 450px;
+  position: absolute;
+  bottom: -15%;
+  left: -30%;
+  transform: translateZ(50px);
+}
+
+/* akhir jumbotron */
+
+/* about */
+
+.about {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about h2 {
+  font-size: 40px;
+  line-height: 64px;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+.about-description {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 32px;
+}
+
+.about-image {
+  width: 30%;
+}
+
+.about .rectangle {
+  margin: auto;
+  display: block;
+  width: 280px;
+  height: 500px;
+  background-color: #d9d9d9;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0 4px 30px 5px rgba(0, 0, 0, 0.25);
+}
+
+.about-image img {
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* akhir about */
+
+/* kurikulum */
+
+.kurikulum {
+  position: relative;
+}
+
+.kurikulum .polygon1 {
+  position: absolute;
+  z-index: 2;
+  right: 20%;
+  top: 0;
+}
+
+.kurikulum .polygon2 {
+  position: absolute;
+  z-index: 2;
+  right: 16%;
+  top: -20%;
+  transform: rotate(60deg);
+}
+
+.kurikulum .polygon3 {
+  position: absolute;
+  z-index: 2;
+  right: 11%;
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.kurikulum .circle-dots {
+  position: absolute;
+  width: 70%;
+  z-index: -1;
+  bottom: -60%;
+  left: -30%;
+}
+.kurikulum h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.kurikulum-container {
+  background-color: #212121;
+  box-shadow: 0 4px 30px 5px rgba(0, 0, 0, 0.25);
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px;
+  border-radius: 30px;
+}
+
+.kurikulum-item {
+  width: 150px;
+  height: 150px;
+  background-color: #d9d9d9;
+  box-shadow: 0 4px 30px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.kurikulum .html div {
+  background-image: url(img/html.png);
+  width: 125px;
+  height: 125px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.kurikulum .css div {
+  background-image: url(img/css.png);
+  width: 90px;
+  height: 125px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.kurikulum .js div {
+  background-image: url(img/js.png);
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.kurikulum .html img {
+  width: 110px;
+}
+
+/* akhir kurikulum */
+
+/* kelas */
+
+.kelas {
+  width: 80%;
+  margin: auto;
+}
+.kelas h2 {
+  font-size: 40px;
+  line-height: 64px;
+}
+.kelas-container {
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+
+.kelas-deskripsi {
+  padding: 80px;
+  line-height: 32px;
+  width: 55%;
+}
+
+.kelas-deskripsi-judul {
+  font-size: 20px;
+}
+
+.kelas-image {
+  background-color: #212121;
+  width: 45%;
+  border-radius: 0 30px 30px 0;
+}
+
+.kelas-image img {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.kelas-button {
+  margin-top: 50px;
+}
+
+.kelas-button a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #212121;
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+  transition: all 0.3s;
+}
+
+.kelas-button a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #212121;
+  padding: 5px 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+  box-shadow: 0 4px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* akhir kelas */
+
+/* testi */
+
+/* akhir testi */
+
+/* footer */
+
+footer {
+  background-color: #212121;
+  padding: 50px 100px;
+  height: 40vh;
+  color: #fff;
+  font-size: 25px;
+  position: relative;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #bdbdbd;
+  font-style: italic;
+  font-size: 20px;
+  display: block;
+  margin-top: 20px;
+}
+
+footer img {
+  position: absolute;
+  width: 250px;
+  right: 15%;
+  bottom: 0;
+}
+
+/* akhir footer */

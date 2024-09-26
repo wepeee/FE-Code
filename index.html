@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FE Code</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/style-responsive.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-title">
+        <h1>FE Code</h1>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#">Kurikulum</a></li>
+          <li><a href="#">Kelas</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <section class="jumbotron">
+        <div class="jumbotron-title">
+          <h1>Study with Us</h1>
+          <p>
+            FE Code adalah perusahaan yang berkomitmen untuk memberdayakan
+            individu di bidang pengembangan website.
+          </p>
+          <a href="">more</a>
+        </div>
+        <div class="jumbotron-image">
+          <div id="char" class="rectangle" data-tilt data-tilt-glare>
+            <img src="assets/img/char.png" alt="char" />
+          </div>
+        </div>
+        <img
+          id="circle"
+          src="assets/img/pattern_circles-4_1_2_0-0_0_1__ffffff_212121.png"
+          alt=""
+        />
+        <div id="line1" class="line1"></div>
+        <div id="line2" class="line2"></div>
+        <div id="line3" class="line3"></div>
+      </section>
+      <section id="about" class="about">
+        <div class="about-image">
+          <div class="rectangle">
+            <img src="assets/img/char1.png" alt="char1" />
+          </div>
+        </div>
+        <div class="about-description">
+          <h2>Tentang FE Code</h2>
+          <p>
+            FE Code adalah perusahaan edukasi teknologi yang berfokus pada
+            pengembangan keterampilan pemrograman website. Kami menyediakan
+            bootcamp untuk membantu peserta menguasai coding. FE berarti
+            Front-End dan Future-Engineered, mencerminkan visi kami untuk
+            mempersiapkan peserta menghadapi masa depan teknologi dengan
+            keterampilan praktis dan inovatif.
+          </p>
+        </div>
+      </section>
+      <section class="kurikulum">
+        <h2>Kurikulum</h2>
+        <div class="kurikulum-container">
+          <div class="kurikulum-item html"><div></div></div>
+          <div class="kurikulum-item css"><div></div></div>
+          <div class="kurikulum-item js"><div></div></div>
+        </div>
+        <img
+          class="circle-dots"
+          src="assets/img/pattern_circles-3_1_2_0-0_0_1__ffffff_212121.png"
+          alt="dots"
+        />
+        <img
+          id="polygon1"
+          class="polygon1"
+          src="assets/img/Polygon 1.png"
+          alt="segitiga"
+        />
+        <img
+          id="polygon2"
+          class="polygon2"
+          src="assets/img/Polygon 1.png"
+          alt="segitiga"
+        />
+        <img
+          id="polygon3"
+          class="polygon3"
+          src="assets/img/Polygon 1.png"
+          alt="segitiga"
+        />
+      </section>
+      <section class="kelas">
+        <h2>FE Class</h2>
+        <div class="kelas-container">
+          <div class="kelas-deskripsi">
+            <div class="kelas-deskripsi-judul">
+              <h2>Lorem Ipsum</h2>
+              <p>
+                Lorem Ipsum menyediakan kelas Introduction to HTML, berikut
+                benefit yang akan didapat :
+              </p>
+              <ul>
+                <li>Penglaman</li>
+                <li>Proyek</li>
+                <li>koneksi</li>
+                <li>Sertif</li>
+              </ul>
+            </div>
+            <div class="kelas-button">
+              <a href="">more</a>
+            </div>
+          </div>
+          <div class="kelas-image">
+            <img src="assets/img/fe-code-png.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="testimoni"></section> -->
+      <footer>
+        <h2>Connect with Us</h2>
+        <a href="">Contact</a>
+        <a href="">LinkedIn</a>
+        <a href="">Instagram</a>
+        <img src="assets/img/char2.png" alt="char2" />
+      </footer>
+    </div>
+
+    <script src="assets/script.js"></script>
+    <script type="text/javascript" src="assets/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        if (window.innerWidth >= 768) {
+          VanillaTilt.init(document.querySelector(".rectangle"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
