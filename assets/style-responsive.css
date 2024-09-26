@@ -68,6 +68,18 @@
     margin-bottom: 100px;
   }
   /* nav */
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #bdbdbd;
+  }
+  nav h1 {
+    font-size: 15px;
+  }
   .nav-links {
     display: none;
     justify-content: center;
